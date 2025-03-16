@@ -1,0 +1,62 @@
+.habit-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .month-labels {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .month {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .grid-container {
+    display: flex;
+  }
+  
+  .week-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 5px;
+  }
+  
+  .week {
+    height: 15px;
+    line-height: 15px;
+    font-weight: bold;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(52, 15px);
+    grid-template-rows: repeat(7, 15px);
+    gap: 3px;
+  }
+  
+  .habit-box {
+    width: 15px;
+    height: 15px;
+    background-color: #ebedf0;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .habit-checklist {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    gap: 5px;
+  }
+  
