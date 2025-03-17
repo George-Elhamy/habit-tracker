@@ -36,8 +36,8 @@
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(52, 15px);
-    grid-template-rows: repeat(7, 15px);
+    grid-template-columns: repeat(52, 40px);
+    grid-template-rows: repeat(7, 40px);
     gap: 3px;
   }
   
@@ -59,4 +59,84 @@
     display: flex;
     gap: 5px;
   }
+
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .habit-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .habit-day:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+ 
+
+
+
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(-45deg, #ff9966, #ff5e62, #ff9966);
+    background-size: 400% 400%;
+    animation: gradientMove 10s infinite;
+    margin: 0;
+    padding: 0;
+  }
   
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .habit-tracker-container {
+    padding: 20px;
+  }
+  
+  .habits-section {
+    background: transparent;
+    max-width: 90%;
+    border: none !important;  /* Removes any border */
+    box-shadow: none !important;  /* Removes shadow if any */
+    padding: 40px 0 0 0; /* Adds top padding while keeping other sides unchanged */
+}
+
+
+  /* .habit-calendar {
+    background: transparent;
+    max-width: 100%;
+    border: none !important;  
+    box-shadow: none !important;  
+    padding: 0; 
+  }
+   */
+
+   .habit-calendar {
+    border-radius: 20px;
+   }
+  
+  .habit-card {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .habit-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .habit-image {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+  }
+ 
