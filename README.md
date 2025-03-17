@@ -1,4 +1,4 @@
-# 🟢 Habit Tracker
+# Habit Tracker
 
 A **MERN-based Habit Tracker** that visually tracks daily habits using a **calendar heatmap**, inspired by GitHub's contribution graph. 
 
